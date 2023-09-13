@@ -1,5 +1,4 @@
-html,body {position: relative; height: 100%;}
-body {background: #eee; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; color: #000; margin: 0; padding: 0; }
+body {position: relative; height: 100%;  margin: 0 auto; width: 100%;}
 
 .blind {position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden;}
 
@@ -11,42 +10,53 @@ header .header .swiper-slide img {display: block; width: 100%; height: 100%; obj
 
 /* main */
 /* panthe */
-main .panthe{}
+main .panthe{width: 100%;}
 main .panthe h2{padding: 40px; font-weight: bold; font-size: 20px;}
 main .plist{display: flex; justify-content: space-around; margin: 0 auto; text-align: center;}
 main .plist img{width: 300px; border-radius: 200px; }
 main .plist p{padding: 10px;}
 
 /* gift */
-main .gift{}
-main .glist{}
-main .glist img{width: 300px;}
+main .gift{width: 100%; margin: 0 auto; display: flex; padding: 50px;}
+main .gmain{padding-top: 70px; text-align: center;}
+main .gmain h2{font-weight: bold; text-align: center;}
+main .glist{display: flex; justify-content: space-between;padding-top: 70px; text-align: center;}
+main .glist h3{padding-top: 10px; font-weight:600;}
+main .glist p{padding-top: 10px; font-size: 13px;}
+main .glist img{width: 260px; padding-right: 30px;}
+main .box{padding-top: 50px;}
+main .more{background: #fff; color: #000; border: 1px solid #A10915;padding: 8px 30px; font-size: 1.2rem; }
+main .more:hover {background: #A10915;  color: #fff; transition: all 0.3s; font-weight: 500;}
+main .sub{padding-left: 30px; right: 0;}
+main .sub img{ width: 580px;}
 
 /* ring */
-main .ring{/* width: 1920px; height: 960px; */width: 100%;  display: flex; align-items: center;}
+main .ring{width: 100%; display: flex; align-items: center; margin: 0 auto;}
 main .ring p{z-index: 200; width: 100%;}
-main .ring p img{width: 100%;}
-main .ring .swiper h1{ z-index: 9999999;font-weight: bold;}
-main .ring .swiper{width: 100%; padding-top: 50px; padding-bottom: 50px;}
-main .ring .swiper-slide {background-position: center; background-size: cover; width: 300px; height: 300px;}
-main .ring .swiper-slide img {display: block; width: 100%;}
+main .ring p img{width: 600px;}
+main .ring .swiper{width: 80%; padding-top: 50px; padding-bottom: 50px;}
+main .ring .swiper h1{ z-index: 9999999;font-weight: bold; padding: 30px;}
+main .ring .swiper-slide {background-position: center; background-size: fill; width: 250px; height: 300px;}
+main .ring .swiper-slide img {display: block; width: 250px;}
 
 /* scroll */
-main .scroll {/*Set a css background */ background:url(../img/serbg.jpg) fixed;
+main .scroll {
+/*Set a css background */ background:url(../img/serbg.jpg) fixed;
 /*Dont mind the rest*/ width:100%; line-height:300px; margin:0 auto; margin-top:150px; text-align:center; color:#000; }
-main .scroll h2{text-align: center; font-weight: bold; }
-main .scroll a { display:block; text-align:center; color:#666; -webkit-transition:opacit .5s; transition:opacity .5s;}
-main .scroll a:hover {-webkit-transition:opacity .5s;transition:opacity .5s; opacity:.5;}
-main .scroll img{width: 500px; display: flex;}
-/* main .scroll .ser1{left: 0; position: absolute; display: block;}
-main .scroll .ser3{left: 0; position: absolute; display: block;} */
-main .scroll .ser2{right: 0; position: absolute; }
+main .scroll h2{text-align: center; font-weight: bold; font-size: 16px;}
+main .scroll a { text-align:center; color:#666; -webkit-transition: opacit .5s; transition: opacity .5s;}
+main .scroll a:hover {-webkit-transition: opacity .5s;transition:opacity .5s; opacity:.5;}
+
+main .fir{display: flex; justify-content: space-around; padding: 80px;}
+main .fir img{width: 400px;}
+main .sed{display: flex; justify-content: space-around; padding: 80px;}
+main .sed img{width: 400px;}
 
 /* sns */
-main .sns{padding-top: 50px; }
+main .sns{width: 100%; padding-top: 50px; margin: 0 auto;}
 main .sns h2{text-align: center; font-weight: bold;}
-main .sns p{text-align: center;}
-main .sns .sns-car{max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); }
+main .sns p{text-align: center; line-height: 95px;}
+main .sns .sns-car{display: grid; grid-template-columns: repeat(4,1fr);}
 main .sns img{width: 200px; padding: 10px;}
 
 
