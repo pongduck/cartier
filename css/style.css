@@ -1,29 +1,32 @@
-body {position: relative; height: 100%;  margin: 0 auto; width: 100%;}
-
 .blind {position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden;}
 
 /* header */
-header .header .swiper {width: 100%; height: 700px;}
-header .header .swiper-slide {text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center;}
-header .header .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
+header .header{display: flex; justify-content: space-evenly; align-items: center; padding: 20px 0;}
+header .logo img{width: 250px;}
 
+/* banner */
+.banner .swiper {width: 100vw; height: 600px;}
+.banner .swiper-slide {text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center;}
+.banner .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
 
 /* main */
 /* panthe */
-main .panthe{width: 100%;}
+main .panthe{}
 main .panthe h2{padding: 40px; font-weight: bold; font-size: 20px;}
 main .plist{display: flex; justify-content: space-around; margin: 0 auto; text-align: center;}
 main .plist img{width: 300px; border-radius: 200px; }
 main .plist p{padding: 10px;}
 
 /* gift */
-main .gift{width: 100%; margin: 0 auto; display: flex; padding: 50px;}
+main .gift{width: 100vw; margin: 0 auto; display: flex; padding: 80px 0;}
 main .gmain{padding-top: 70px; text-align: center;}
 main .gmain h2{font-weight: bold; text-align: center;}
 main .glist{display: flex; justify-content: space-between;padding-top: 70px; text-align: center;}
 main .glist h3{padding-top: 10px; font-weight:600;}
 main .glist p{padding-top: 10px; font-size: 13px;}
-main .glist img{width: 260px; padding-right: 30px;}
+main .glist img{width: 260px; padding-right: 30px; position: relative;}
+
+
 main .box{padding-top: 50px;}
 main .more{background: #fff; color: #000; border: 1px solid #A10915;padding: 8px 30px; font-size: 1.2rem; }
 main .more:hover {background: #A10915;  color: #fff; transition: all 0.3s; font-weight: 500;}
@@ -31,20 +34,14 @@ main .sub{padding-left: 30px; right: 0;}
 main .sub img{ width: 580px;}
 
 /* ring */
-main .ring{width: 100%; display: flex; align-items: center; margin: 0 auto;}
-main .ring p{z-index: 200; width: 100%;}
-main .ring p img{width: 600px;}
-main .ring .swiper{width: 80%; padding-top: 50px; padding-bottom: 50px;}
-main .ring .swiper h1{ z-index: 9999999;font-weight: bold; padding: 30px;}
-main .ring .swiper-slide {background-position: center; background-size: fill; width: 250px; height: 300px;}
-main .ring .swiper-slide img {display: block; width: 250px;}
-
+main .ring{}
+main .ring img{width:100vw; background-size: fill;}
 /* scroll */
 main .scroll {
-/*Set a css background */ background:url(../img/serbg.jpg) fixed;
-/*Dont mind the rest*/ width:100%; line-height:300px; margin:0 auto; margin-top:150px; text-align:center; color:#000; }
+/*Set a css background */ background:url(../img/serbg.jpg) fixed 100vw;
+/*Dont mind the rest*/ width:100vw; line-height:300px; margin:0 auto; margin-top:150px; text-align:center; color:#000; }
 main .scroll h2{text-align: center; font-weight: bold; font-size: 16px;}
-main .scroll a { text-align:center; color:#666; -webkit-transition: opacit .5s; transition: opacity .5s;}
+main .scroll a {text-align:center; color:#666; -webkit-transition: opacit .5s; transition: opacity .5s;}
 main .scroll a:hover {-webkit-transition: opacity .5s;transition:opacity .5s; opacity:.5;}
 
 main .fir{display: flex; justify-content: space-around; padding: 80px;}
@@ -53,7 +50,7 @@ main .sed{display: flex; justify-content: space-around; padding: 80px;}
 main .sed img{width: 400px;}
 
 /* sns */
-main .sns{width: 100%; padding-top: 50px; margin: 0 auto;}
+main .sns{width: 100vw; padding-top: 50px; margin: 0 auto;}
 main .sns h2{text-align: center; font-weight: bold;}
 main .sns p{text-align: center; line-height: 95px;}
 main .sns .sns-car{display: grid; grid-template-columns: repeat(4,1fr);}
@@ -61,7 +58,7 @@ main .sns img{width: 200px; padding: 10px;}
 
 
 /* news */
-main .news {background-size: cover; background-position: center; width: 100%; padding: 400px 0; position: relative;}
+main .news {background-size: cover; background-position: center; width: 100vw; padding: 400px 0; position: relative;}
 main .news .new_wrap {text-align: center; width: 50%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 main .news .new_wrap > * {margin: 50px 0;}
 main .news .new_wrap p {width: 40%; display: inline-block;}
@@ -71,5 +68,5 @@ main .news .new_wrap .join {background: #A10915; color: #fff; padding: 10px 40px
 main .news .new_wrap .join:hover {background: #fff; border: 1px solid #A10915; color: #000; transition: all 0.3s; font-weight: 600;}
 
 /* footer */
-footer {width: 100%; height: 100px; background: rgba(0, 0, 0, 0.8); padding-top: 30px;}
+footer {width: 100vw; height: 100px; background: rgba(0, 0, 0, 0.8); padding-top: 30px;}
 footer p{text-align: center; color: #eee; line-height: 30px; letter-spacing: 1px; font-size: 14px;}
