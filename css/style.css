@@ -1,72 +1,113 @@
-.blind {position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden;}
+/* font
+font-family: 'Cinzel', serif;*/
 
+.blind {position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden;}
+.banner img{width: 100%;}
+
+/* --------------index-------------------- */
 /* header */
-header .header{display: flex; justify-content: space-evenly; align-items: center; padding: 20px 0;}
-header .logo img{width: 250px;}
+.header{display: flex; justify-content: space-evenly; align-items: center; padding: 20px 0;}
+.logo img{width: 250px;}
 
 /* banner */
-.banner .swiper {width: 100vw; height: 600px;}
+.banner .swiper {width: 100%; height: 600px;}
 .banner .swiper-slide {text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center;}
 .banner .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
 
 /* main */
 /* panthe */
-main .panthe{}
-main .panthe h2{padding: 40px; font-weight: bold; font-size: 20px;}
-main .plist{display: flex; justify-content: space-around; margin: 0 auto; text-align: center;}
-main .plist img{width: 300px; border-radius: 200px; }
-main .plist p{padding: 10px;}
+.panthe{padding: 80px 0;}
+.panthe h2{padding: 40px; font-weight: bold; font-size: 20px; font-family: 'Cinzel', serif;}
+.plist{display: flex; justify-content: space-around; margin: 0 auto; text-align: center;}
+.plist img{width: 300px; border-radius: 200px; }
+.plist p{padding: 10px; font-weight: bold;}
 
 /* gift */
-main .gift{width: 100vw; margin: 0 auto; display: flex; padding: 80px 0;}
-main .gmain{padding-top: 70px; text-align: center;}
-main .gmain h2{font-weight: bold; text-align: center;}
-main .glist{display: flex; justify-content: space-between;padding-top: 70px; text-align: center;}
-main .glist h3{padding-top: 10px; font-weight:600;}
-main .glist p{padding-top: 10px; font-size: 13px;}
-main .glist img{width: 260px; padding-right: 30px; position: relative;}
+.gift{width: 100vw; margin: 0 auto; display: flex; padding: 100px 0;}
+.gmain{padding-top: 70px; text-align: center;}
+.gmain h2{font-weight: bold; text-align: center; font-family: 'Cinzel', serif; font-size: 900;}
+.glist{display: flex; justify-content: space-between;padding-top: 70px; text-align: center;}
+.glist h3{padding-top: 10px; font-weight:600;}
+.glist p{padding-top: 10px; font-size: 13px;}
+.glist img{width: 260px; padding-right: 30px; position: relative;}
 
-
-main .box{padding-top: 50px;}
-main .more{background: #fff; color: #000; border: 1px solid #A10915;padding: 8px 30px; font-size: 1.2rem; }
-main .more:hover {background: #A10915;  color: #fff; transition: all 0.3s; font-weight: 500;}
-main .sub{padding-left: 30px; right: 0;}
-main .sub img{ width: 580px;}
+.box{padding-top: 50px; }
+.more{background: #fff; color: #000; border: 1px solid #A10915;padding: 8px 30px; font-size: 1.2rem; }
+.more:hover {background: #A10915;  color: #fff; transition: all 0.3s; font-weight: 500;}
+.sub{padding-left: 30px; right: 0;}
+.sub img{ width: 580px; right: -53px; position: relative;}
 
 /* ring */
-main .ring{}
-main .ring img{width:100vw; background-size: fill;}
+.ring{width: 100%; height: 700px; background-image: url("../img/ringg.jpg");}
+.ring h2{font-weight: 900; font-family: 'Cinzel', serif; text-align: center; font-size: 40px; position: relative; top: 300px; left: -330px;}
+
 /* scroll */
-main .scroll {
+.scroll {
 /*Set a css background */ background:url(../img/serbg.jpg) fixed 100vw;
 /*Dont mind the rest*/ width:100vw; line-height:300px; margin:0 auto; margin-top:150px; text-align:center; color:#000; }
-main .scroll h2{text-align: center; font-weight: bold; font-size: 16px;}
-main .scroll a {text-align:center; color:#666; -webkit-transition: opacit .5s; transition: opacity .5s;}
-main .scroll a:hover {-webkit-transition: opacity .5s;transition:opacity .5s; opacity:.5;}
+.scroll h2{text-align: center; font-weight: bold; font-size: 16px;}
+.scroll a {text-align:center; color:#666; -webkit-transition: opacit .5s; transition: opacity .5s;}
+.scroll a:hover {-webkit-transition: opacity .5s;transition:opacity .5s; opacity:.5;}
 
-main .fir{display: flex; justify-content: space-around; padding: 80px;}
-main .fir img{width: 400px;}
-main .sed{display: flex; justify-content: space-around; padding: 80px;}
-main .sed img{width: 400px;}
+.fir{display: flex; justify-content: space-around; padding: 80px;}
+.fir img{width: 400px;}
+.sed{display: flex; justify-content: space-around; padding: 80px;}
+.sed img{width: 400px; padding-bottom: 33px;}
+.ser4 img{height: 330px; padding-bottom: -15px;}
 
 /* sns */
-main .sns{width: 100vw; padding-top: 50px; margin: 0 auto;}
-main .sns h2{text-align: center; font-weight: bold;}
-main .sns p{text-align: center; line-height: 95px;}
-main .sns .sns-car{display: grid; grid-template-columns: repeat(4,1fr);}
-main .sns img{width: 200px; padding: 10px;}
+.sns{width: 100%; padding: 80px 0; margin: 0 auto;}
+.sns h2{text-align: center; font-weight: bold;}
+.sns p{text-align: center; line-height: 95px;}
 
+.sns .sns-car{padding: 10px;}
+.sns img{width: 200px; padding: 10px;}
+.cara{text-align: center;}
+.carb{text-align: center;}
+
+/* youtube */
+.youtube{text-align: center;}
 
 /* news */
-main .news {background-size: cover; background-position: center; width: 100vw; padding: 400px 0; position: relative;}
-main .news .new_wrap {text-align: center; width: 50%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
-main .news .new_wrap > * {margin: 50px 0;}
-main .news .new_wrap p {width: 40%; display: inline-block;}
-main .news .new_wrap p img {width: 100%;}
-main .news .new_wrap h1 {font-size: 1.5rem; font-weight: 600;}
-main .news .new_wrap .join {background: #A10915; color: #fff; padding: 10px 40px; font-size: 1.2rem;}
-main .news .new_wrap .join:hover {background: #fff; border: 1px solid #A10915; color: #000; transition: all 0.3s; font-weight: 600;}
+.news {background-size: cover; background-position: center; width: 100vw; padding: 400px 0; position: relative;}
+.news .new_wrap {text-align: center; width: 50%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.news .new_wrap > * {margin: 50px 0;}
+.news .new_wrap p {width: 40%; display: inline-block;}
+.news .new_wrap p img {width: 100%;}
+.news .new_wrap h1 {font-size: 1.5rem; font-weight: 600;}
+.news .new_wrap .join {background: #A10915; color: #fff; padding: 10px 40px; font-size: 1.2rem;}
+.news .new_wrap .join:hover {background: #fff; border: 1px solid #A10915; color: #000; transition: all 0.3s; font-weight: 600;}
 
 /* footer */
 footer {width: 100vw; height: 100px; background: rgba(0, 0, 0, 0.8); padding-top: 30px;}
 footer p{text-align: center; color: #eee; line-height: 30px; letter-spacing: 1px; font-size: 14px;}
+
+
+/* ---------------jewelry------------------- */
+/* main */
+.jew_list{display: flex;}
+
+.jew_serch{text-align: center; padding: 50px 0;}
+.jew_serch img{width: 130px;}
+.jew_serch span{border: 1px solid #666;}
+
+/* ---------------watches------------------- */
+/* main */
+
+/* ---------------perfume------------------- */
+/* main */
+/* list */
+.per_list{display: flex; justify-content: space-between; padding: 80px 0; text-align: center;}
+.per_list h2{line-height: 3.3;}
+.per_list p{line-height: 2;}
+.per_list span{font-weight: bold; line-height: 1.8;}
+
+.per_text{width: 100%; display: flex; padding: 50px 0;}
+.per_text img{width: 50%;}
+.per_inner {text-align: center; margin-top: 100px;}
+.per_inner h2{font-weight: bold;}
+.per_inner p{line-height:2.5;}
+.per_inner a{border: 1px solid #666; line-height: 5;}
+
+
+/* ---------------------------------- */
